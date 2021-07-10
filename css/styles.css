@@ -64,17 +64,13 @@ img {
 }
 
 :root {
-  --color-pale-orange:#FDD6BA;
-  --color-light-cream: 
-  #FEFCF7;
-  --color-grey:#83888F;
-  --color-dark-grey-blue:#08111d;
-  --barlow-font: 'Barlow', sans-serif;
-  --fraunces-font: 'Fraunces', serif;
-  --white-color: #fefcf7;
-  --btn-color: #0e8784;
-  --heading-color: #333D48;
-  --link-color: #83888f;
+--dark-blue: #203A4C;
+--grayish-dark-blue: #33323D;
+--grayish-green: #5FB4A2;
+--very-light-white:#FAFAFA;
+--white:#FAFAFA;
+--light-grey:#EAEAEB;
+--font-ibarra:"Ibarra Real Nova";
 }
 
 
