@@ -376,15 +376,22 @@ img {
     letter-spacing: -0.357143px;
     color: #33323D;
     margin-bottom: 40px;
-    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
   }
 
 
-  /* .contact__heading::before {
+  .contact__heading::after {
     content: "";
     display: block;
-    border-top: 1px solid red;
-  } */
+    border-top: 1px solid black;
+    margin-right: 32px;
+    width: 100%;
+    margin-left: 32px;
+    height: 2px;
+  }
   
   .contact__link {
     font-family: "Public Sans";
@@ -400,10 +407,42 @@ img {
     box-sizing: border-box;
     text-decoration: none;
   }
+
+  .contact__link:hover {
+    background-color: var(--grayish-dark-blue);
+    color: white;
+  }
 }
 
 
 @media only screen and (min-width: 1075px) {
+
+  .contact__heading {
+    font-family: var(--font-ibarra);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+
+  .contact__heading::after {
+    content: "";
+    display: block;
+    border-top: 1px solid black;
+    margin-right: 32px;
+    width: 100%;
+    margin-left: 32px;
+    height: 2px;
+  }
 
 
 }
