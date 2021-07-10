@@ -1206,24 +1206,6 @@ img {
 
   @media only screen and (min-width: 689px) {
 
-    .form__container {
-      display: flex;
-      flex-direction: column;
-     flex-wrap: wrap;
-    }
-
-     .form__heading {
-    width: 350px;
-    margin-right: 125px;
-    font-family: var(--font-ibarra);
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 42px;
-    letter-spacing: -0.357143px;
-    color: #33323D;
-  }
-
     .form__input {
       background-color:  #dddada;
       border: none;
