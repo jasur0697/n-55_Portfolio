@@ -1,31 +1,20 @@
-
 @font-face {
-  font-family: "Barlow";
-  src: url("../fonts/Barlow-Regular.woff2") format("woff2"),
-  url("../fonts/Barlow-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Fraunces";
-  src: url("../fonts/Fraunces9pt-Black.woff2") format("woff2"),
-  url("../fonts/Fraunces9pt-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Barlow";
-  src: url("../fonts/Barlow-Bold.woff2") format("woff2"),
-  url("../fonts/Barlow-Bold.woff") format("woff");
+  font-family: "Ibarra Real Nova";
+  src: url("../fonts/IbarraRealNova-Bold.woff2") format("woff2"),
+      url("../fonts/IbarraRealNova-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-Regular.woff2") format("woff2"),
+      url("../fonts/PublicSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 
 html {
@@ -41,7 +30,7 @@ html {
 
 .container {
   width: 100%;
-  max-width: 1320px;
+  max-width: 1110px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -54,7 +43,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Barlow" "Arial", sans-serif;
+  font-family: "Public Sans" "Arial", sans-serif;
   background-color: #FEFCF7;
 }
 
