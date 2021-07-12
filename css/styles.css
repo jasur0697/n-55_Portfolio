@@ -17,15 +17,25 @@
 }
 
 
-html {
-  box-sizing: border-box;
-  height: 100%;
-}
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+:root {
+  --dark-blue: #203A4C;
+  --grayish-dark-blue: #33323D;
+  --grayish-green: #5FB4A2;
+  --very-light-white:#FAFAFA;
+  --white:#FAFAFA;
+  --light-grey:#EAEAEB;
+  --font-ibarra:"Ibarra Real Nova", "Arial", sans-serif; ;
+  }
+
+html {
+  box-sizing: border-box;
+  height: 100%;
 }
 
 .container {
@@ -63,19 +73,7 @@ img {
   overflow: hidden;
 }
 
-:root {
---dark-blue: #203A4C;
---grayish-dark-blue: #33323D;
---grayish-green: #5FB4A2;
---very-light-white:#FAFAFA;
---white:#FAFAFA;
---light-grey:#EAEAEB;
---font-ibarra:"Ibarra Real Nova";
-}
-
-
 /* Header */
-
 
 .site-header {
   display: flex;
@@ -91,6 +89,7 @@ img {
   text-decoration: none;
   display: block;
   flex-shrink: 0;
+
 }
 
 .site-header__button {
@@ -135,8 +134,6 @@ img {
 .site-nav__link {
   text-decoration: none;
   font-family: "Public Sans";
-  font-style: normal;
-  font-weight: normal;
   font-size: 12px;
   line-height: 14px;
   text-align: center;
@@ -156,7 +153,6 @@ img {
 .site-nav__item:not(:last-child) {
   margin-bottom: 32px;
 }
-
 
 /* Hero */
 
@@ -222,8 +218,6 @@ img {
 
 .about__link {
   font-family: "Public Sans";
-  font-style: normal;
-  font-weight: normal;
   font-size: 12px;
   line-height: 14px;
   text-align: center;
@@ -283,8 +277,6 @@ img {
 
 .me__desc {
   font-family: "Public Sans";
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 30px;
   color: #33323D;
@@ -296,16 +288,24 @@ img {
 .me__link {
   text-decoration: none;
   font-family: "Public Sans";
-  font-style: normal;
-  font-weight: normal;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #33323D;
+  color: var(--grayish-dark-blue);
   border: 1px solid #33323D;
   box-sizing: border-box;
   padding: 17px 35px; 
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+}
+
+.me__link:hover {
+  background-color: var(--grayish-dark-blue);
+  color: white;
+  
 }
 
 .personal_pic-desk {
@@ -342,8 +342,6 @@ img {
 
 .contact__link {
   font-family: "Public Sans";
-  font-style: normal;
-  font-weight: normal;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 2px;
@@ -353,8 +351,17 @@ img {
   border: 1px solid #33323D;
   box-sizing: border-box;
   text-decoration: none;
+  flex-shrink: 0;
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
 }
 
+.contact__link:hover {
+  background-color: var(--grayish-dark-blue);
+  color: white;
+}
 
 @media only screen and (min-width: 678px) {
 
@@ -408,10 +415,7 @@ img {
     text-decoration: none;
   }
 
-  .contact__link:hover {
-    background-color: var(--grayish-dark-blue);
-    color: white;
-  }
+
 }
 
 
@@ -433,7 +437,6 @@ img {
     width: 100%;
   }
 
-
   .contact__heading::after {
     content: "";
     display: block;
@@ -445,8 +448,6 @@ img {
   }
 
 }
-
-
 
 @media only screen and (min-width: 689px) {
 .me {
@@ -467,7 +468,6 @@ img {
     
   }
 
-  
   .me__heading {
     font-family: var(--font-ibarra);
     font-style: normal;
@@ -756,8 +756,6 @@ img {
 .footer-nav__link {
   text-decoration: none;
   font-family: "Public Sans";
-  font-style: normal;
-  font-weight: normal;
   font-size: 12px;
   line-height: 14px;
   text-align: center;
@@ -999,7 +997,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;.
-    width: 493px;
+    min-width: 493px;
+    width: 100%;
   }
 
  
@@ -1011,7 +1010,6 @@ img {
 
   .site-nav {
     display: block;
-    position: static;
     z-index: 1;
     top: 0;
     margin: 0;
@@ -1103,12 +1101,9 @@ img {
 
   }
   
-  .contact-page__content {
 
-  }
   
   .contact-page__heading {
-    
     font-family: var(--font-ibarra);
     font-style: normal;
     font-weight: bold;
@@ -1251,7 +1246,6 @@ img {
     }
 
     .contact-page__heading {
-      width: 350px;
       margin-right: 125px;
       font-family: var(--font-ibarra);
       font-style: normal;
